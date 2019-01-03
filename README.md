@@ -1,5 +1,10 @@
 # nginx-gui-web
 
+
+### template from `vue-element-admin`
+
+### 1.0 初始化项目构建出内容
+
 ## Project setup
 ```
 npm install
@@ -26,4 +31,4 @@ npm run lint
 ```
 
 ### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
