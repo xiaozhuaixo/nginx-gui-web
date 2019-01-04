@@ -31,7 +31,6 @@ const RouterMap = [
             name: 'Index',
             component: () => import('@/views/index/Index'),
             meta: {icon: "tachometer" , title: '首页'},
-            hidden: true,
         },
     ]
   },
