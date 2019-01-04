@@ -4,7 +4,7 @@ import NProgress from 'nprogress' // Progress 进度条
 import 'nprogress/nprogress.css'// Progress 进度条样式
 // 创建axios实例
 const service = axios.create({
-  baseURL: '/api',//process.env.BASE_API, // api的base_url
+  baseURL: process.env.VUE_APP_BASE_URL, // api的base_url
   timeout: 50000000, // 请求超时时间
 });
 

@@ -11,7 +11,7 @@
       >
         <el-menu-item index="logo">
           <router-link to="/index/index" style="display:block;">
-            <h5>{{projectName}}</h5>
+            <h3 class="title">{{projectName}}</h3>
           </router-link>
         </el-menu-item>
         <sidebar-item :menus="menus"></sidebar-item>
@@ -93,7 +93,7 @@ export default {
       return !this.sidebar.opened
     },
     projectName(){
-      return process.env.PROJECT_NAME;
+        return process.env.VUE_APP_PROJECT_NAME;
     }
   },
   mounted(){
@@ -104,4 +104,7 @@ export default {
 </script>
 
 <style scoped>
+    .title {
+        text-align:center;
+    }
 </style>

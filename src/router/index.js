@@ -26,7 +26,13 @@ const RouterMap = [
     name: 'Layout',
     isNeedShow: true,
     children: [
-
+        {
+            path: 'index',
+            name: 'Index',
+            component: () => import('@/views/index/Index'),
+            meta: {icon: "tachometer" , title: '首页'},
+            hidden: true,
+        },
     ]
   },
   { path: '/error', redirect: '/404',hidden:true}
