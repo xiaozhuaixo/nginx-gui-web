@@ -1,5 +1,5 @@
 <template>
-    <router-view />
+    <h3>端口</h3>
 </template>
 
 <script>

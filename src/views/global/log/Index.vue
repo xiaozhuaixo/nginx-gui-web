@@ -1,5 +1,5 @@
 <template>
-    <router-view />
+    <h3>日志</h3>
 </template>
 
 <script>

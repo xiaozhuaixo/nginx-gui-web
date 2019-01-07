@@ -1,5 +1,5 @@
 <template>
-    <router-view />
+    <h3>内存</h3>
 </template>
 
 <script>

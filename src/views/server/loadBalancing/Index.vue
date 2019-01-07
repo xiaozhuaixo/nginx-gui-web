@@ -1,5 +1,5 @@
 <template>
-    <router-view />
+    <h3>负载均衡</h3>
 </template>
 
 <script>
