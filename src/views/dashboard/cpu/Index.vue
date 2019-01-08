@@ -44,6 +44,10 @@
             const self = this;
             self.initSocket();
         },
+        destroyed(){
+            const self = this;
+            self.socket.close();
+        }
     }
 </script>
 
