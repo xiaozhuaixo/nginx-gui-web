@@ -16,20 +16,15 @@ import store from './store'
 
 import '@/icons' // icon
 import '@/permission' // permission control
-
-import VueSocketio from 'vue-socket.io'
+import Chart from 'chart.js';
 
 Vue.use(ElementUI, { locale })
 
-// const socket = new VueSocketio({
-//     debug: true,
-//     connection: 'http://localhost:8080/Dashboard',
-// });
-// console.log(socket)
 
-// Vue.use(socket);
+
 
 Vue.config.productionTip = false
+Vue.prototype.$chart = Chart;
 new Vue({
   el: '#app',
   router,

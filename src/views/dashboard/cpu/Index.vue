@@ -22,15 +22,17 @@
             },
             //socket 连接
             onOpen(){
-                const self = this;
-                console.log("连接建立");
-                self.socket.send("hello world");
-                console.log(self.socket)
-                self.socket.send("hello world");
+
             },
             //来自服务器信息
             onMessage(message){
-                console.log("信息内容" + message);
+                let data = message.data;
+                let type = data.split("-")[0];
+                let resultData = data.split('-')[1];
+                if(type === "CPU"){
+                    let cpuData = JSON.parse(resultData);
+                    console.log(cpuData);
+                }
             },
             //socket 关闭
             onClose(){
